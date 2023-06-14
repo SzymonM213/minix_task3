@@ -301,6 +301,13 @@ struct flock {
 #define	AT_REMOVEDIR		0x800	/* Remove directory only */
 #endif
 
+/*
+ * Constants for exclusive lock.
+ */
+#define EXCL_UNLOCK				1	/* Unlock. */
+#define EXCL_UNLOCK_FORCE		2	/* Forced unlock by privileged users. */
+#define EXCL_LOCK				4	/* Lock unconditionally. */
+#define EXCL_LOCK_NO_OTHERS		8	/* Lock if no other users have this file opened. */
 
 #ifndef _KERNEL
 #include <sys/cdefs.h>

@@ -118,7 +118,9 @@
 #define VFS_COPYFD		(VFS_BASE + 46)
 #define VFS_CHECKPERMS		(VFS_BASE + 47)
 #define VFS_GETSYSINFO		(VFS_BASE + 48)
+#define VFS_EXCLUSIVE		(VFS_BASE + 49)
+#define VFS_FEXCLUSIVE		(VFS_BASE + 50)
 
-#define NR_VFS_CALLS		49	/* highest number from base plus one */
+#define NR_VFS_CALLS		51	/* highest number from base plus one */
 
 #endif /* !_MINIX_CALLNR_H */
